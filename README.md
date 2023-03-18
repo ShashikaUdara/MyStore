@@ -1,2 +1,2 @@
-# Storefront
+# MyStore
 Simple online eCommerce platform
