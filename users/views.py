@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -27,4 +28,17 @@ def user_login(request):
         return render(request, 'users/auth/login.html')
     
 def home(request):
-    return render(request, 'users/home/user-dashboard.html')
+    # getting current user
+    if request.user.is_authenticated:
+        current_user = request.user
+    else:
+        print('Unauthenticated user')
+    
+    user_data = User.objects.get(username=current_user.username)
+
+    welcome_text = 'Greetings ' + user_data.first_name + ' ' + user_data.last_name
+    last_login = user_data.last_login
+    return render(request, 'users/home/user-dashboard.html', {
+        'welcome_text': welcome_text,
+        'last_login_time': last_login,
+    })
