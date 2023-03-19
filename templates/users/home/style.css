@@ -1,0 +1,193 @@
+body{
+	position: relative;
+	width: 1728px;
+	height: 1117px;
+	
+	background: url(home-page-wall.jpg);
+}
+
+#mystore-logo{
+	/* mystore */
+
+
+	position: absolute;
+	width: 172px;
+	height: 54px;
+	left: 60px;
+	top: 60px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 54px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	color: #FFFFFF;
+}
+
+#nav-1{
+	/* Frame 1 */
+
+
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 60px;
+
+	position: absolute;
+	width: 327px;
+	height: 24px;
+	left: 1030px;
+	top: 81px;
+
+}
+
+#nav-2{
+	/* Frame 2 */
+	
+	
+	/* Auto layout */
+	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 60px;
+	
+	position: absolute;
+	width: 171px;
+	height: 24px;
+	left: 1477px;
+	top: 81px;
+}
+
+#nav-elem-grocery{
+	/* Grocery */
+	
+	
+	width: 65px;
+	height: 24px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height */
+	
+	
+	color: #FFFFFF;
+	
+	
+	/* Inside auto layout */
+	
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+#nav-elem-house{
+	/* House Hold */
+	
+	
+	width: 92px;
+	height: 24px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height */
+	
+	
+	color: #FFFFFF;
+	
+	
+	/* Inside auto layout */
+	
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+#nav-elem-about{
+	/* About */
+	
+	
+	width: 50px;
+	height: 24px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height */
+	
+	
+	color: #FFFFFF;
+	
+	
+	/* Inside auto layout */
+	
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+
+#nav-elem-register{
+	/* Register */
+
+
+	width: 67px;
+	height: 24px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+#nav-elem-login{
+	/* Login */
+
+
+	width: 44px;
+	height: 24px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
