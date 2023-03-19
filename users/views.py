@@ -18,10 +18,13 @@ def user_login(request):
         if user is not None:
             login(request, user)
             # Redirect to a success page.
-            return redirect('hi')
+            return redirect('home')
         else:
             # Return an 'invalid login' error message.
             messages.success(request, 'There is an error with your credentials, please try again')
             return redirect('login')
     else:
         return render(request, 'users/auth/login.html')
+    
+def home(request):
+    return render(request, 'users/home/user-dashboard.html')
